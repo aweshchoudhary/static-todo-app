@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>UTODO APP</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="logo">
+                utodo
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cards"></div>
+        <div class="bottomC">
+            <button class="btn" onclick="toggleModel('display')">add todo</button>
+        </div>
+    </div>
+    <div class="model" style="display: none;">
+        <div class="top">
+            Enter Your Todo
+        </div>
+        <div class="model-inputs">
+            <div class="item">
+                <input type="text" id="heading" name="heading" placeholder="Enter your todo heading">
+            </div>
+            <div class="item textarea">
+                <textarea name="desc" id="textarea" placeholder="Enter your description"></textarea>
+            </div>
+        </div>
+        <div class="bottom">
+            <a href="/" class="btn" id="add">add</a>
+            <button class="btn" onclick="toggleModel()">Cancel</button>
+        </div>
+    </div>
+    <div class="screen-black" style="display: none;"></div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
